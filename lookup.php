@@ -22,6 +22,7 @@ require_once("whois.php");
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/ribbon.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -30,18 +31,19 @@ require_once("whois.php");
 <div class="navbar-spacer"></div>
 <nav class="navbar">
       <div class="container">
-	  <br>
+	  <br>	  
+		<a href="javascript:history.back()">&larr;</a>
 		Displaying WHOIS results for <?php echo '<span style="color:green">'. $domain .'</span>'; ?>:
       </div>
 </nav>
 <div class="container">
-<table width='100%'>		
+<table width='100%'>
+		
 <?php echo '<pre>'. $whois->whoislookup($domain) .'</pre>'; ?>
 </table>
 </div>
 </body>
 <footer>
-	<a href="https://github.com/faridg/whoiser" target="_blank">
-	<img src="images/git.png" alt="faridg on github" height="42px" width="42px"></a>
+	<a href="https://github.com/faridg/whoiser" target="_blank"><div class="corner-ribbon bottom-right sticky white"><img src="images/git.png" alt="faridg on github" height="30px" width="30px"></a></div>
 </footer>
 </html>
