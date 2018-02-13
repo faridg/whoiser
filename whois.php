@@ -27,23 +27,23 @@ if(!$server) {
 $res=$this->queryWhois($server,$domain);
 while(preg_match_all("/Whois Server: (.*)/", $res, $matches))
 {
-$server=array_pop($matches[1]);
-$res=$this->queryWhois($server,$domain);
+	$server=array_pop($matches[1]);
+	$res=$this->queryWhois($server,$domain);
 }
 return $res;
 }
 else
-return "Invalid Entry";
+return "Invalid Entry (probably https, www, or / in url)";
 }
 private function queryWhois($server,$domain)
 {
-$fp = @fsockopen($server, 43, $errno, $errstr, 20) or die("Sockerror " . $errno . " - " . $errstr);
-if($server=="whois.verisign-grs.com")
-$domain="=".$domain;
-fputs($fp, $domain . "\r\n");
-$out = "";
-while(!feof($fp)){
-$out .= fgets($fp);
+	$fp = @fsockopen($server, 43, $errno, $errstr, 20) or die("Sockerror " . $errno . " - " . $errstr);
+	if($server=="whois.verisign-grs.com")
+	$domain="=".$domain;
+	fputs($fp, $domain . "\r\n");
+	$out = "";
+	while(!feof($fp)){
+	$out .= fgets($fp);
 }
 fclose($fp);
 return $out;
