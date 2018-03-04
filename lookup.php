@@ -5,21 +5,12 @@ require_once("whois.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>GeoIP Web Locator</title>
   <meta name="description" content="what's my ip">
   <meta name="author" content="fargas">
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet" type="text/css">
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
@@ -28,21 +19,16 @@ require_once("whois.php");
 	a:link {
 		text-decoration: none;
 	}
-
 	a:visited {
 		text-decoration: none;
 	}
-
 	a:hover {
 		text-decoration: none;
 	}
-
 	a:active {
 		text-decoration: none;
 	}
 	</style>
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body class="code-snippets-visible">
@@ -62,6 +48,8 @@ require_once("whois.php");
 </div>
 </body>
 <footer>
-	<a href="https://github.com/faridg/whoiser" target="_blank"><div class="corner-ribbon bottom-right sticky white"><img src="images/git.png" alt="faridg on github" height="30px" width="30px"></a></div>
+	<a href="https://github.com/faridg/whoiser" target="_blank">
+	<div class="corner-ribbon bottom-right sticky white"><img src="images/git.png" alt="faridg on github" height="30px" width="30px"></div>
+	</a>
 </footer>
 </html>

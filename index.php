@@ -26,7 +26,9 @@
 	</div>
 </div>
 <footer>
-<a href="https://github.com/faridg/whoiser" target="_blank"><div class="corner-ribbon bottom-right sticky white"><img src="images/git.png" alt="faridg on github" height="30px" width="30px"></a></div>
+	<a href="https://github.com/faridg/whoiser" target="_blank">
+	<div class="corner-ribbon bottom-right sticky white"><img src="images/git.png" alt="faridg on github" height="30px" width="30px"></div>
+	</a>
 </footer>
 </body>
 </html>
